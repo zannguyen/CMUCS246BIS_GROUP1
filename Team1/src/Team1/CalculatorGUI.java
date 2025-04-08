@@ -62,6 +62,14 @@ public class CalculatorGUI extends JFrame {
     }
 
     private void nhan() {
+    	try {
+            int a = getSo1();
+            int b = getSo2();
+            int kq = a * b;
+            txtKetQua.setText(String.valueOf(kq));
+        } catch (NumberFormatException e) {
+            txtKetQua.setText("Nhập sai định dạng số");
+        }
     }
 
     private void chia() {
