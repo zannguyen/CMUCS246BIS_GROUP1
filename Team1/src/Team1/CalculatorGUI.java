@@ -63,7 +63,7 @@ public class CalculatorGUI extends JFrame {
             int b = getSo2();
             int kq = a - b;
             txtKetQua.setText(String.valueOf(kq));
-            SystSystem.out.println("Hi");
+            System.out.println("Hi");
         } catch (NumberFormatException e) {
             txtKetQua.setText("Nhập sai định dạng số");
         }
