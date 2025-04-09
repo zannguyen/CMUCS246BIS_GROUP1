@@ -68,8 +68,9 @@ public class CalculatorGUI extends JFrame {
             int kq = a * b;
             txtKetQua.setText(String.valueOf(kq));
         } catch (NumberFormatException e) {
-            txtKetQua.setText("Nhập sai định dạng số");
+            txtKetQua.setText("ERROR");
         }
+    	
     }
 
     private void chia() {
